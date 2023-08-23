@@ -4,10 +4,10 @@ import random
 number = random.randint(-10000, 10000)
 
 # Get the last digit of the number using modulo operator
-last_digit = abs(number) % 10  # Take absolute value to handle negative numbers
+last_digit = abs(number) % 10  # Take the absolute value to handle negative numbers
 
 # Determine the appropriate message based on the last digit
-message = "The string Last digit of {} is {} and is ".format(number, last_digit)
+message = "Last digit of {} is {} and is ".format(number, last_digit)
 
 if last_digit > 5:
     message += "greater than 5"
